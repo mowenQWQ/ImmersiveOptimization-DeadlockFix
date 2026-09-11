@@ -1,0 +1,22 @@
+# Compiled bytecode
+*.class
+_decomp/
+_verify/
+_repack/
+
+# Patch tool build output
+_patch/*.class
+_patch/FCL_*.class
+
+# Editor files
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep the jar out of the repo (hosted as a GitHub release instead)
+*.jar
