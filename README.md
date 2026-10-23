@@ -2,6 +2,8 @@
 
 > 基于 [Luke100000/ImmersiveOptimization](https://github.com/Luke100000/ImmersiveOptimization) 的 GPL-3.0 修改，修复 1.20.1 Forge 版本的 ServerHangWatchdog 死锁问题。
 
+> ⚠️ **AI 使用说明**：本作品由 AI 辅助生成（生成时间：2026-09-11）。仅供学习与参考使用，发布、引用或投入使用前请人工核实关键信息。
+
 ## 这是什么
 
 `ImmersiveOptimization` 是一个实体 tick 调度器（*a lightweight entity-tick-scheduler for doubling your TPS*）。官方版本存在已知并发死锁（[issue #33](https://github.com/Luke100000/ImmersiveOptimization/issues/33)，2026-05 开启，未关闭）：其 Worker 线程读取强制加载区块的存储数据时，与主线程的区块管理抢锁，导致单 tick 卡 60 秒被 watchdog 强制终止。
